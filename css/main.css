@@ -25,3 +25,13 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.line {
+    border-bottom: 1px solid #CAD8E3;
+}
+
+.footer {
+    background: #2D2D2D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
