@@ -1,0 +1,52 @@
+.navigation {
+    background: #38383a;
+    padding-top: 26px;   
+    height: 67px;
+    color: #fff;
+    font-size: 14px;
+
+    ul {        
+        margin: 0;
+        padding: 0;        
+        
+
+        list-style-type: none;
+        text-transform: uppercase;
+        display: none;
+        
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            
+            font-weight: 700;            
+            letter-spacing: 4px;            
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                // cursor: pointer;
+
+                &:hover, &.active {
+                    color: #ffcc00;
+                }
+
+            }                       
+
+        } 
+
+    }
+    
+}
+.navigation__toggle-button {
+    @media (min-width: 992px) {
+        display: none;
+    }
+    text-emphasis: uppercase;   
+    font-weight: 700;
+    letter-spacing: 3px;
+}

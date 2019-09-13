@@ -1,7 +1,5 @@
-@import "http://fonts.fontstorage.com/import/noto.css";
-@import "http://fonts.fontstorage.com/import/notoserif.css";
 body {
-  font-family: sans-serif;
+  font-family: Noto Sans;
   box-sizing: border-box;
 }
 .block {
@@ -13,11 +11,6 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-.nav {
-  background: #414141;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .slider {
   background: #215993;
@@ -34,27 +27,76 @@ body {
 }
 .logo {
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  color: #000;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-transform: uppercase;
 }
 .logo .logo__name {
-  text-transform: uppercase;
-  font-size: 38px;
-  letter-spacing: 9px;
+  font-size: 33px;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: 5.5px;
+}
+@media (min-width: 992px) {
+  .logo .logo__name {
+    font-size: 38px;
+    letter-spacing: 9px;
+  }
 }
 .logo .logo__slogan {
-  font-size: 16px;
+  font-size: 14px;
   color: #a1bbd9;
-  letter-spacing: 11.5px;
+  line-height: 1;
+  letter-spacing: 7px;
 }
-/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/noto */
-/*
-	Noto Sans, 400, 400 italic, 700, 700 italic
-*/
-/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/notoserif */
-/*
-	Noto Serif, 400, 400 italic, 700, 700 italic
-*/
+@media (min-width: 992px) {
+  .logo .logo__slogan {
+    font-size: 16px;
+    letter-spacing: 10px;
+  }
+}
+.navigation {
+  background: #38383a;
+  padding-top: 26px;
+  height: 67px;
+  color: #fff;
+  font-size: 14px;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  display: none;
+}
+@media (min-width: 992px) {
+  .navigation ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.navigation ul li {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navigation ul li a:hover,
+.navigation ul li a.active {
+  color: #ffcc00;
+}
+.navigation__toggle-button {
+  text-emphasis: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+@media (min-width: 992px) {
+  .navigation__toggle-button {
+    display: none;
+  }
+}
