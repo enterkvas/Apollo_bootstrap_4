@@ -57,46 +57,115 @@ body {
   }
 }
 .navigation {
-  background: #38383a;
-  padding-top: 26px;
-  height: 67px;
+  background-color: #38383a;
   color: #fff;
   font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .navigation {
+    background: #38383a;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 .navigation ul {
+  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-transform: uppercase;
-  display: none;
+  background-color: #35577D;
 }
 @media (min-width: 992px) {
   .navigation ul {
     display: flex;
     justify-content: space-between;
+    background-color: transparent;
   }
 }
 .navigation ul li {
   margin: 0;
   padding: 0;
-  font-weight: 700;
   letter-spacing: 4px;
+  border-bottom: 1px solid #466a92;
+}
+@media (min-width: 992px) {
+  .navigation ul li {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+.navigation ul li.active {
+  color: #ffcc00;
 }
 .navigation ul li a {
+  display: block;
   text-decoration: none;
   color: #fff;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .navigation ul li a {
+    padding: 0;
+    display: inline;
+  }
 }
 .navigation ul li a:hover,
 .navigation ul li a.active {
   color: #ffcc00;
 }
 .navigation__toggle-button {
-  text-emphasis: uppercase;
-  font-weight: 700;
-  letter-spacing: 3px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #38383a;
+}
+.navigation__toggle-button:before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  width: 25px;
+  height: 20px;
+  background: url('../img/icons/navigation-icon.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.navigation__toggle-button:focus,
+.navigation__toggle-button:active {
+  background-color: #16385F;
 }
 @media (min-width: 992px) {
   .navigation__toggle-button {
     display: none;
+  }
+}
+.navigation__toggle-button--active {
+  background-color: #16385F;
+}
+.container--mobile--no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .container--mobile--no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container--mobile--no-padding {
+    width: 1140px;
   }
 }
