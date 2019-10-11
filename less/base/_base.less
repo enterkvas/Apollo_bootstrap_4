@@ -13,11 +13,6 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.slider {
-    background: #215993;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .line {
     border-bottom: 1px solid #CAD8E3;
 }
@@ -25,4 +20,25 @@ body {
     background: #2D2D2D;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+// .visible {
+//     @media (min-width: 768px) {    
+//         visibility: visible;
+//     }    
+// }
+// .invisible {
+//     @media (min-width: 768px) {    
+//         visibility: hidden;       
+//     }    
+// }
+
+.d-md-none {
+    @media (min-width: 768px) {
+        display: none; 
+    }
+}
+.d-xl-none {
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
