@@ -66,9 +66,9 @@ $(document).ready(function() {
 	$("#top-slider").owlCarousel({
 		singleItem: true,
 		navigation: true,
-		// theme: "top-slider-theme",
-		// navigationText : ["",""],
-		// slideSpeed: 600
+		theme: "top-slider-theme",
+		navigationText : ["",""],
+		slideSpeed: 600
 	});
 
 	//slide2id - плавная прокрутка по ссылкам внутри страницы
