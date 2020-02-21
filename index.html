@@ -41,16 +41,16 @@
   </head>
   <body>
     <!-- Логотип -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="logo">
+    <!-- <div class="container"> -->
+      <!-- <div class="row justify-content-center"> -->
+        <!-- <div class="col-md-6"> -->
+          <div class="logo" id="main">
             <div class="logo__name">Аполло 404</div>
             <div class="logo__slogan">хостинг компания</div>
           </div>
-        </div>
-      </div>
-    </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </!-->
     <!-- //Логотип -->
 
     <!-- Навигация -->
@@ -60,12 +60,12 @@
       </div>
       <div class="container container--mobile--no-padding">
         <ul>
-          <li><a href="#">главная</a></li>
-          <li><a href="#">как-мы-работаем</a></li>
-          <li><a href="#">фрилансерам</a></li>
-          <li><a href="#">стартапам</a></li>
-          <li><a href="#">тарифы</a></li>
-          <li><a href="#">контакты</a></li>
+          <li><a class="selected" href="#main">главная</a></li>          
+          <li><a href="#benefits">как-мы-работаем</a></li>
+          <li><a href="#freelance">фрилансерам</a></li>
+          <li><a href="#startup">стартапам</a></li>
+          <li><a href="#prices">тарифы</a></li>
+          <li><a href="#footer">контакты</a></li>
         </ul>
       </div>
     </nav>
@@ -168,13 +168,13 @@
     <!-- //Слайдер -->
 
     <!-- Как мы работаем -->
-    <div class="container text-center section">
+    <div class="container text-center section" id="benefits">
       
-      <h2 class="heading">Как мы работаем</h2>        
+      <div class="heading">Как мы работаем</div>        
       
       <div class="row">
         <div class="col-md-6 col-xl-3 benefit-block">          
-          <div class="benefit-block__img"><img src="img/images/weather.png" alt="Работаем в любую погоду"></div>
+          <div class="benefit-block__img mt-27"><img src="img/images/weather.png" alt="Работаем в любую погоду"></div>
           <div class="benefit-block__header">Работаем в любую<br> погоду</div>
           <div class="benefit-block__text">              
             Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
@@ -188,14 +188,14 @@
           </div>
         </div>                          
         <div class="col-md-6 col-xl-3 benefit-block">          
-          <div class="benefit-block__img"><img src="img/images/flipchart.png" alt="Стандарты качества по ГОСТу"></div>
+          <div class="benefit-block__img mb-27"><img src="img/images/flipchart.png" alt="Стандарты качества по ГОСТу"></div>
           <div class="benefit-block__header">Стандарты качества<br> по ГОСТу</div>
           <div class="benefit-block__text">              
             Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
           </div>
         </div>                          
         <div class="col-md-6 col-xl-3 benefit-block">            
-          <div class="benefit-block__img"><img src="img/images/presentation.png" alt="Стремительно развиваемся"></div>
+          <div class="benefit-block__img mt-12"><img src="img/images/presentation.png" alt="Стремительно развиваемся"></div>
           <div class="benefit-block__header">Стремительно<br> развиваемся</div>
           <div class="benefit-block__text text-center">              
             Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
@@ -209,13 +209,19 @@
     <div class="line"></div>
 
     <!-- Хостинг для фрилансеров -->
-    <div class="container">
-      <div class="row">
+    <div id="freelance"></div>
+    <div>
+      <div class="service-description__img"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук"></img>
+    </div>       
+    <div class="container service-description">    
+      <div class="row">        
         <div class="col-md-6">
-          <div class="block">Картинка ноутбук</div>
-        </div>
-        <div class="col-md-6">
-          <div class="block">Хостинг для фрилансеров</div>
+          <h2 class="heading heading--number heading--number-1">Хостинг для фрилансеров</h2>
+          <div class="service-description__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="service-description__button-arrow"></div>
         </div>
       </div>
     </div>
@@ -224,13 +230,22 @@
     <div class="line"></div>
 
     <!-- Тариф для стартапов -->
-    <div class="container">
+    <div id="startup"></div>
+    <div>
+      <div class="service-description__img"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ноутбук"></img>
+    </div>
+    <div class="container service-description">
       <div class="row">
-        <div class="col-md-6 order-md-last">
+        <!-- <div class="col-md-6 order-md-last">
           <div class="block">Картинка ракета</div>
-        </div>
+        </div> -->
         <div class="col-md-6">
-          <div class="block">Тариф для стартапов</div>
+          <h2 class="heading heading--number heading--number-2">Тариф для стартапов</h2>
+          <div class="service-description__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="service-description__button-arrow"></div>
         </div>
       </div>
     </div>
@@ -238,25 +253,78 @@
 
     <div class="line"></div>
 
-    <!-- Тарифы и пакеты -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 ">
-          <div class="block">Тарифы и пакеты</div>
+    <!-- Тарифы и пакеты -->    
+    <section class="prices">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2 class="heading">Тарифы и пакеты</h2>
+            <p class="subtitle-text">Everyone that enters through Him is always safe and the person shall find pastures for himself.</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Package 1 -->
+          <div class="col-md-4">            
+            <div class="package">
+              <header class="package__type">фриланс</header>
+              <div class="package__price">590</div>
+              <div class="package__period">оплата в месяц</div>
+              <div class="package__benefits">
+                <ul>
+                  <li>10 GB Disk Space</li>
+                  <li>5 Sub Domains</li>
+                  <li>12 Database</li>
+                  <li>Unlimited Users</li>
+                </ul>               
+              </div>
+
+              <a class="button">начать</a>              
+            </div>            
+          </div>
+          <!-- //Package 1 -->
+
+          <!-- Package 2 -->
+          <div class="col-md-4">            
+            <div class="package">
+              <header class="package__type">стартап</header>
+              <div class="package__price">990</div>
+              <div class="package__period">оплата в месяц</div>
+              <div class="package__benefits">
+                <ul>
+                  <li>10 GB Disk Space</li>
+                  <li>5 Sub Domains</li>
+                  <li>12 Database</li>
+                  <li>Unlimited Users</li>
+                </ul>               
+              </div>
+
+              <a class="button button--orange">попробовать</a>              
+            </div>            
+          </div>
+          <!-- //Package 2 -->
+
+          <!-- Package 3 -->
+          <div class="col-md-4">            
+            <div class="package">
+              <header class="package__type">highload</header>
+              <div class="package__price">~6900</div>
+              <div class="package__period">оплата в месяц</div>
+              <div class="package__benefits">
+                <ul>
+                  <li>10 GB Disk Space</li>
+                  <li>5 Sub Domains</li>
+                  <li>12 Database</li>
+                  <li>Unlimited Users</li>
+                </ul>               
+              </div>
+
+              <a class="button">начать</a>              
+            </div>            
+          </div>
+          <!-- //Package 3 -->
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="block">Тариф 1</div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">Тариф 2</div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">Тариф 3</div>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- //Тарифы и пакеты -->
 
     <!-- Подвал -->
@@ -264,16 +332,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-xl-3">
-            <div class="block">Блок 1</div>
+            <header class="footer__title">продукт</header>
+            <ul class="footer__nav">
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Compare</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
           </div>
           <div class="col-md-4 col-xl-3">
-            <div class="block">Блок 2</div>
+            <header class="footer__title">о компании</header>
+            <ul class="footer__nav">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
           </div>
           <div class="col-md-4 col-xl-3">
-            <div class="block">Блок 3</div>
-          </div>
+            <header class="footer__title">поддержка</header>
+            <ul class="footer__nav">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Ger Started Guide</a></li>
+            </ul>
+          </div>          
         </div>
-        <div class="block">Копирайт</div>
+        <div class="copyright">
+          © 2016 Аполло 440. Все права защищены.
+        </div>
       </div>
     </footer>
     <!-- //Подвал -->

@@ -1,31 +1,53 @@
 .logo {
-    text-align: center;    
-    font-weight: 700;       
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
+	text-align: center;
+	padding-top: 74px;
+	padding-bottom: 38px;
+	text-transform: uppercase;
+	
+	@media (min-width: 768px) {
+		padding-top: 98px;
+		padding-bottom: 38px;
+	}
 
-    .logo__name {          
-        font-size: 33px;
-        color: #000;
-        line-height: 1.5;        
-        letter-spacing: 5.5px;      
-        
-        @media (min-width: 992px) {
-            font-size: 38px;         
-            letter-spacing: 9px;
-        }
-    }
-    .logo__slogan {        
-        font-size: 14px;        
-        color: #a1bbd9;
-        line-height: 1;
-        letter-spacing: 7px; 
-        
-        @media (min-width: 992px) {
-            font-size: 16px;
-            letter-spacing: 10px;
-        }               
-    }
+	@media (min-width: 992px) {
+		padding-top: 40px;
+		padding-bottom: 48px;
+	}
+		
+	@media (min-width: 1200px) {
+		padding-top: 17px;
+		padding-bottom: 48px;
+	}
+	
+	&__name {
+		color: #000;
+		font-size: 33px;
+		line-height: 1.38;
+		letter-spacing: 8.7px;
+		font-weight: 700;
+		margin-top: 25px;
+		
+		@media (min-width: 768px) {		
+			margin-top: 0;
+		}
+		@media (min-width: 1200px) {
+			font-size: 38px;
+			letter-spacing: 9.5px;
+			line-height: 1.5;
+			margin-top: 27px;
+		}
+	}
+	&__slogan {
+		color: #a1bbd9;
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 8.8px;
+		font-weight: 700;
+			
+		@media (min-width: 1200px) {
+			font-size: 16px;
+			letter-spacing: 10.3px;		
+		}
+	}
 
 }
