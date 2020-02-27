@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="zxx">
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -168,9 +168,9 @@
     <!-- //Слайдер -->
 
     <!-- Как мы работаем -->
-    <div class="container text-center section" id="benefits">
+    <div class="container text-center section container--tablet--no-padding" id="benefits">
       
-      <div class="heading">Как мы работаем</div>        
+      <div class="heading mb-40">Как мы работаем</div>        
       
       <div class="row">
         <div class="col-md-6 col-xl-3 benefit-block">          
@@ -188,8 +188,8 @@
           </div>
         </div>                          
         <div class="col-md-6 col-xl-3 benefit-block">          
-          <div class="benefit-block__img mb-27"><img src="img/images/flipchart.png" alt="Стандарты качества по ГОСТу"></div>
-          <div class="benefit-block__header">Стандарты качества<br> по ГОСТу</div>
+          <div class="benefit-block__img"><img src="img/images/flipchart.png" alt="Стандарты качества по ГОСТу"></div>
+          <div class="benefit-block__header mt-27">Стандарты качества<br> по ГОСТу</div>
           <div class="benefit-block__text">              
             Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
           </div>
@@ -209,14 +209,17 @@
     <div class="line"></div>
 
     <!-- Хостинг для фрилансеров -->
-    <div id="freelance"></div>
-    <div>
-      <div class="service-description__img"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук"></img>
+    <div id="freelance"></div>    
+    <div class="service-description__img hide-md"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук">
     </div>       
-    <div class="container service-description">    
+    <div class="container container--tablet--no-padding service-description pt-80">    
       <div class="row">        
         <div class="col-md-6">
-          <h2 class="heading heading--number heading--number-1">Хостинг для фрилансеров</h2>
+          <div class="service-description__img hide-sm"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="heading heading--number heading--number-1 mt--8">Хостинг для фрилансеров</h2>
           <div class="service-description__content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -230,17 +233,16 @@
     <div class="line"></div>
 
     <!-- Тариф для стартапов -->
-    <div id="startup"></div>
-    <div>
-      <div class="service-description__img"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ноутбук"></img>
+    <div id="startup"></div>    
+    <div class="service-description__img hide-md"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ноутбук">
     </div>
-    <div class="container service-description">
+    <div class="container container--tablet--no-padding service-description pt-50">
       <div class="row">
-        <!-- <div class="col-md-6 order-md-last">
-          <div class="block">Картинка ракета</div>
-        </div> -->
+        <div class="col-md-6 order-md-last">
+          <div class="service-description__img hide-sm"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ракета"></div>
+          </div>        
         <div class="col-md-6">
-          <h2 class="heading heading--number heading--number-2">Тариф для стартапов</h2>
+          <h2 class="heading heading--number heading--number-2 mt-20">Тариф для стартапов</h2>
           <div class="service-description__content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -254,10 +256,10 @@
     <div class="line"></div>
 
     <!-- Тарифы и пакеты -->    
-    <section class="prices">
+    <section id="prices" class="prices">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
+          <div class="col-md-5 text-center">
             <h2 class="heading">Тарифы и пакеты</h2>
             <p class="subtitle-text">Everyone that enters through Him is always safe and the person shall find pastures for himself.</p>
           </div>
@@ -328,11 +330,11 @@
     <!-- //Тарифы и пакеты -->
 
     <!-- Подвал -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-xl-3">
-            <header class="footer__title">продукт</header>
+            <div class="footer__title">продукт</div>
             <ul class="footer__nav">
               <li><a href="#">Business</a></li>
               <li><a href="#">Compare</a></li>
@@ -341,7 +343,7 @@
             </ul>
           </div>
           <div class="col-md-4 col-xl-3">
-            <header class="footer__title">о компании</header>
+            <div class="footer__title">о компании</div>
             <ul class="footer__nav">
               <li><a href="#">Blog</a></li>
               <li><a href="#">News</a></li>
@@ -350,7 +352,7 @@
             </ul>
           </div>
           <div class="col-md-4 col-xl-3">
-            <header class="footer__title">поддержка</header>
+            <div class="footer__title">поддержка</div>
             <ul class="footer__nav">
               <li><a href="#">Support</a></li>
               <li><a href="#">Developers</a></li>

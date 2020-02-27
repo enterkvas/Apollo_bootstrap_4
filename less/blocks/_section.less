@@ -1,15 +1,55 @@
+        // секция для блока benefits
 .section {
     padding-top: 32px;
     padding-bottom: 50px;
 
     @media (min-width: 768px) {
-        padding-bottom: 72px;
+        padding-top: 33px;
+        padding-bottom: 66px;
     }
 
     @media (min-width: 1200px) {
         padding-top: 58px;
     }    
 }
+        // Скрываю/показываю картинки в service-descriptin
+.hide-md {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hide-sm {
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+        // freelance
+.mt--8 {
+    @media (min-width:768px) {
+        margin-top: -8px;
+    }
+}
+        // benefits 4-я картинка
+.mt-12 {
+    margin-top: 12px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+         // startup heading
+.mt-20 {
+    @media (min-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
         // xs benefits 1-я картинка
 .mt-27 {
     margin-top: 27px;
@@ -18,10 +58,43 @@
         margin-top: 0;
     }
 }
-.mt-12 {
-    margin-top: 12px;
+        // 768 benefits heading
+.mb-20 { 
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }    
 }
-        // xs benefits 3-я картинка
-.mb-27 {
-    margin-bottom: 27px!important;
+        // heading
+.mb-40 { 
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+    }    
+}
+        // startup
+.pt-50 {
+    @media (min-width:768px) {
+        padding-top: 50px;
+    }
+}
+        // freelance 
+.pt-80 {
+    @media (min-width:768px) {
+        padding-top: 80px;
+    }
+}
+
+.container--tablet--no-padding {
+
+    @media (min-width: 768px) {
+        padding-left: 0;
+	    padding-right: 0;
+    }
+    @media (min-width: 992px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 960px;
+    }
+    @media (min-width: 1200px) {      
+        width: 1140px;
+    }
 }

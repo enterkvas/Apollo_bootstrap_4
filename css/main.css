@@ -55,7 +55,6 @@ p {
   position: relative;
   color: #333;
   margin: 0;
-  margin-top: 0px;
   font-size: 28px;
   font-weight: 700;
   line-height: 38px;
@@ -79,8 +78,8 @@ p {
   border-radius: 13px;
   background-color: #fbc50a;
   color: #fff;
-  top: -40px;
-  left: -13px;
+  top: -39px;
+  left: -11px;
   font-size: 16px;
   font-weight: 700;
   padding-top: 4px;
@@ -99,12 +98,46 @@ p {
 }
 @media (min-width: 768px) {
   .section {
-    padding-bottom: 72px;
+    padding-top: 33px;
+    padding-bottom: 66px;
   }
 }
 @media (min-width: 1200px) {
   .section {
     padding-top: 58px;
+  }
+}
+@media (min-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hide-sm {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mt--8 {
+    margin-top: -8px;
+  }
+}
+.mt-12 {
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .mt-12 {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .mt-20 {
+    margin-top: 20px;
   }
 }
 .mt-27 {
@@ -115,11 +148,43 @@ p {
     margin-top: 0;
   }
 }
-.mt-12 {
-  margin-top: 12px;
+@media (min-width: 768px) {
+  .mb-20 {
+    margin-bottom: 20px;
+  }
 }
-.mb-27 {
-  margin-bottom: 27px!important;
+@media (min-width: 768px) {
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .pt-50 {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .pt-80 {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .container--tablet--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .container--tablet--no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container--tablet--no-padding {
+    width: 1140px;
+  }
 }
 .button {
   background-color: #252525;
@@ -305,7 +370,7 @@ p {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 20px 15px;
+  padding: 19px 15px;
 }
 @media (min-width: 992px) {
   .navigation ul li a {
@@ -327,7 +392,7 @@ p {
 .slider {
   background-image: url('../img/bg/slider-bg.jpg');
   background-position: center;
-  padding-top: 63px;
+  padding-top: 62px;
   padding-bottom: 75px;
   box-shadow: 0px 3px 25px 0px #688ab3;
 }
@@ -338,7 +403,12 @@ p {
   letter-spacing: -0.5px;
   text-align: center;
   color: #fff;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .slider .logo_title {
+    padding-bottom: 7px;
+  }
 }
 @media (min-width: 992px) {
   .slider .logo_title {
@@ -353,6 +423,11 @@ p {
   line-height: 28px;
   color: #cddfe0;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .slider .logo_slogan {
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 992px) {
   .slider .logo_slogan {
@@ -381,14 +456,16 @@ p {
 .benefit-block {
   padding-bottom: 22px;
 }
+@media (min-width: 768px) {
+  .benefit-block {
+    padding-bottom: 46px;
+  }
+}
 .benefit-block:last-child {
   padding-bottom: 0px;
 }
 @media (min-width: 768px) {
   .benefit-block:nth-last-child(2) {
-    padding-bottom: 0px;
-  }
-  .benefit-block:last-child {
     padding-bottom: 0px;
   }
 }
@@ -397,14 +474,19 @@ p {
     padding-bottom: 0px;
   }
 }
-.benefit-block .benefit-block__img {
+.benefit-block__img {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
   margin-bottom: 20px;
 }
-.benefit-block .benefit-block__header {
+@media (min-width: 768px) {
+  .benefit-block__img {
+    margin-bottom: 18px;
+  }
+}
+.benefit-block__header {
   color: #333;
   font-size: 18px;
   font-weight: 700;
@@ -412,25 +494,25 @@ p {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  .benefit-block .benefit-block__header {
+  .benefit-block__header {
     font-size: 22px;
     line-height: 28px;
   }
 }
-.benefit-block .benefit-block__text {
+.benefit-block__text {
   color: #777;
   font-size: 14px;
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  .benefit-block .benefit-block__text {
+  .benefit-block__text {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
-  .benefit-block .benefit-block__text {
+  .benefit-block__text {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -443,27 +525,47 @@ p {
   margin-top: -8px;
   margin-bottom: 50px;
 }
+@media (min-width: 768px) {
+  .service-description__button-arrow {
+    margin-top: 0;
+  }
+}
 .service-description__content {
   width: 98%;
   font-size: 14px;
   color: #777;
   line-height: 24px;
 }
+@media (min-width: 768px) {
+  .service-description__content {
+    width: 100%;
+  }
+}
 .service-description__img_tablet {
   max-width: 100%;
   margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .service-description__img_tablet {
+    margin-top: 0;
+  }
 }
 .service-description__img_rocket {
   max-width: 100%;
   margin-top: 50px;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .service-description__img_rocket {
+    margin-top: 0;
+  }
+}
 .package {
   padding-top: 35px;
   padding-bottom: 60px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   border-radius: 6px;
   background-color: #ffffff;
   box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
@@ -487,7 +589,7 @@ p {
   font-size: 48px;
   font-weight: 700;
   color: #242526;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   line-height: 1;
 }
 .package__price::after {
@@ -528,7 +630,12 @@ p {
 .footer {
   background-color: #252525;
   padding-top: 38px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 42px;
+  }
 }
 .footer__title {
   color: #fff;
@@ -536,13 +643,18 @@ p {
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .footer__nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
   padding-bottom: 37px;
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    padding-bottom: 45px;
+  }
 }
 .footer__nav li {
   margin: 0;
@@ -556,6 +668,7 @@ p {
   cursor: pointer;
 }
 .footer .copyright {
+  width: 55%;
   color: #6c6c6c;
   font-size: 14px;
   line-height: 22px;
@@ -575,8 +688,7 @@ p {
   position: absolute;
   width: 72px;
   height: 72px;
-  top: 50%;
-  margin-top: -36px;
+  top: 33%;
 }
 @media (min-width: 768px) {
   .top-slider-theme .owl-controls .owl-buttons div {
@@ -647,4 +759,9 @@ p {
 }
 .prices {
   padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .prices {
+    padding-bottom: 102px;
+  }
 }
