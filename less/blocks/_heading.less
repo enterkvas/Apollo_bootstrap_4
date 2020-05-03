@@ -5,14 +5,15 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 38px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5px;    
 
     @media (min-width: 1200px) {
         font-size: 38px;
         line-height: 48px;
         letter-spacing: -0.8px;
-        margin-bottom: 40px; 
+        margin-bottom: 20px;         
     }
+
     &--number:before {
         position: absolute;
         display: block;
@@ -29,15 +30,20 @@
         font-weight: 700;
         padding-top: 4px;
         padding-left: 8px;            
-        line-height: 1;
-        
+        line-height: 1;        
+
+        @media (min-width: 1200px) {
+            top: -18px;
+            left: -32px;
+        }        
     }
+
     &--number-1:before {
         content: "1";
     }
+    
     &--number-2:before {
-        content: "2";
-    } 
-       
+        content: "2";        
+    }       
 }
 

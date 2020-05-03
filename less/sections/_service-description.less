@@ -1,5 +1,5 @@
-.service-description {    
-
+.service-description {
+    
     &__button-arrow {
         width: 40px;
         height: 40px;
@@ -10,6 +10,11 @@
         @media (min-width:768px) {
             margin-top: 0;
         }
+
+        @media (min-width:1200px) {                
+            margin-top: 24px;
+            margin-bottom: 88px
+        }
     }
 
     &__content {
@@ -19,28 +24,55 @@
         line-height: 24px;
         
         @media (min-width:768px) {
-            width: 100%;
+            width: 101%;            
         }
-    }
-    .service-description__toggle {
-        
-    }
-    &__img_tablet {
-        max-width: 100%;
-        margin-top: 40px;
-        
-        @media (min-width:768px) {
-            margin-top: 0;
+
+        @media (min-width:1200px) {                
+            width: 100%;            
         }
-    }
-    &__img_rocket {
-        max-width: 100%;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        
-        @media (min-width:768px) {
-            margin-top: 0;
+    }    
+
+    &__img {
+        position: relative;
+    
+        &_tablet {            
+            max-width: 100%;
+            margin-top: 40px;
+            margin-bottom: -3px;
+            
+            @media (min-width:768px) {
+                position: absolute;
+                top: -41px;
+                right: 4px;                
+            }
+
+            @media (min-width:1200px) {                
+                position: absolute;
+                max-width: 98%;
+                right: 80px;
+                top: -26px;
+            }
         }
+
+        &_rocket {
+            max-width: 100%;
+            margin-top: 50px;
+            margin-bottom: 27px;
+            
+            @media (min-width:768px) {               
+                margin-top: 0;
+                margin-left: 4px;
+            }
+
+            @media (min-width:1200px) {                
+                position: absolute;
+                max-width: 98%;
+                right: 47px;
+                top: 0px;
+            }
+
+        }
+        
     }
 
-}
+}    

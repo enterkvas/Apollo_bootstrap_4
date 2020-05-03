@@ -5,12 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Titles -->
     <title>Apollo404 - Bootstrap 4</title>
     <meta name="keywords" content="Ключевые слова..." />
     <meta name="description" content="Описание страницы..." />
-
     <!-- Styles -->
     <link rel="stylesheet" href="libs/normalize/normalize.css" />
     <link
@@ -21,10 +19,8 @@
     <link rel="stylesheet" href="fonts/noto/noto.css" />
     <link rel="stylesheet" href="fonts/notoserif/notoserif.css" />
     <link rel="stylesheet" href="fonts/als-rubl/als-rubl.css" />
-
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css" />
-
     <!-- FavIcons -->
     <link
       rel="shortcut icon"
@@ -32,7 +28,6 @@
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -40,17 +35,11 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Логотип -->
-    <!-- <div class="container"> -->
-      <!-- <div class="row justify-content-center"> -->
-        <!-- <div class="col-md-6"> -->
-          <div class="logo" id="main">
-            <div class="logo__name">Аполло 404</div>
-            <div class="logo__slogan">хостинг компания</div>
-          </div>
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </!-->
+    <!-- Логотип -->    
+    <div class="logo">
+      <div class="logo__name">Аполло 404</div>
+      <div class="logo__slogan">хостинг компания</div>
+    </div>        
     <!-- //Логотип -->
 
     <!-- Навигация -->
@@ -58,7 +47,7 @@
       <div id="navigation-toggle" class="navigation__toggle-button">
         навигация
       </div>
-      <div class="container container--mobile--no-padding">
+      <div class="container container--mobile--no-padding container--tablet--no-padding container--desctop--no-padding">
         <ul>
           <li><a class="selected" href="#main">главная</a></li>          
           <li><a href="#benefits">как-мы-работаем</a></li>
@@ -73,91 +62,75 @@
 
     <!-- Слайдер -->
     <div class="slider">
-      <div class="container">
+      <div class="container container--desctop--no-padding">
         <div id="top-slider" class="owl-carousel">
           <!-- row 1 -->
           <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
+            <div class="col-md-8 col-lg-6 col-xl-5">
               <div class="d-md-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Тариф для фрилансеров
                 </div>
-                <div class="logo_slogan">
-                  Надежные сервера, отзывчивая техподдержка.
+                <div class="slider_slogan">
+                  Надежные сервера,<br /> отзывчивая техподдержка.
                 </div>
               </div>
               <div class="d-xl-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Тариф для фрилансеров и небольших сайтов
                 </div>
-                <div class="logo_slogan">
-                  Разместите свое портфолио и сайты клиентов. Надежные
-                  сервера,<br />
-                  отзывчивая техподдержка.
-                </div>
-                <div class="text_md">
-                  Разместите свое портфолио и сайты<br />
-                  клиентов. Надежные сервера,<br />
-                  отзывчивая техподдержка.
-                </div>
-              </div>
+                <div class="slider_slogan">
+                  Разместите свое портфолио и сайты клиентов. Надежные сервера,<br /> отзывчивая техподдержка.
+                </div>                
+              </div>              
             </div>
           </div>
           <!-- // row 1 -->
           <!-- row 2 -->
           <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
+            <div class="col-md-8 col-lg-7">
               <div class="d-md-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Хостинг<br />
                   для стартапа
                 </div>
-                <div class="logo_slogan">
-                  Увеличивайте мощноности при необходимости.
+                <div class="slider_slogan">
+                  Увеличивайте мощноности<br /> при необходимости.
                 </div>
               </div>
               <div class="d-xl-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Нужен хостинг для стартапа?<br />
                   Вы в правильном месте!
                 </div>
-                <div class="logo_slogan">
-                  Начните со специального стартап тарифа. Увеличивайте мощности
-                  при необходимости.
-                </div>
-                <div class="text_md">
-                  Начните со специального стартап тарифа.<br />
-                  Увеличивайте мощности при<br />
-                  необходимости.
-                </div>
+                <div class="slider_slogan">
+                  Начните со специального стартап тарифа.<br /> Увеличивайте мощности
+                  при<br /> необходимости.
+                </div>                
               </div>
             </div>
           </div>
           <!-- // row 2 -->
           <!-- row 3 -->
           <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
+            <div class="col-md-8 col-lg-7">
               <div class="d-md-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Highload<br />
                   площадка
                 </div>
-                <div class="logo_slogan">
-                  Супер мощные сервера, мгновенная масштабируемость.
+                <div class="slider_slogan">
+                  Супер мощные сервера,<br /> мгновенная масштабируемость.
                 </div>
               </div>
               <div class="d-xl-none">
-                <div class="logo_title">
+                <div class="slider_title">
                   Надежная площадка для высоконагруженных проектов
                 </div>
-                <div class="logo_slogan">
-                  Супер мощные сервера, мгновенная масштабируемость, гибкая
+                <div class="slider_slogan">
+                  Супер мощные сервера, мгновенная<br /> масштабируемость, гибкая
                   конфигурация.
-                </div>
-                <div class="text_md">
-                  Супер мощные сервера,<br />
-                  мгновенная масштабируемость, гибкая конфигурация.
-                </div>
+                </div>                
               </div>
             </div>
           </div>
@@ -168,7 +141,7 @@
     <!-- //Слайдер -->
 
     <!-- Как мы работаем -->
-    <div class="container text-center section container--tablet--no-padding" id="benefits">
+    <div class="container text-center section-benefits" id="benefits">
       
       <div class="heading mb-40">Как мы работаем</div>        
       
@@ -212,14 +185,14 @@
     <div id="freelance"></div>    
     <div class="service-description__img hide-md"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук">
     </div>       
-    <div class="container container--tablet--no-padding service-description pt-80">    
+    <div class="container service-description container--tablet--no-padding container--desctop--no-padding pt-freelance">    
       <div class="row">        
         <div class="col-md-6">
           <div class="service-description__img hide-sm"><img class="service-description__img_tablet" src="img/images/notebook.png" alt="Картинка ноутбук">
           </div>
         </div>
         <div class="col-md-6">
-          <h2 class="heading heading--number heading--number-1 mt--8">Хостинг для фрилансеров</h2>
+          <h2 class="heading heading--number heading--number-1 mt-freelance-heading">Хостинг для фрилансеров</h2>
           <div class="service-description__content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -236,18 +209,18 @@
     <div id="startup"></div>    
     <div class="service-description__img hide-md"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ноутбук">
     </div>
-    <div class="container container--tablet--no-padding service-description pt-50">
+    <div class="container service-description container--tablet--no-padding container--desctop--no-padding pt-pb-startup-container">
       <div class="row">
-        <div class="col-md-6 order-md-last">
+        <div class="col-md-6 col-xl-5 order-md-last">
           <div class="service-description__img hide-sm"><img class="service-description__img_rocket" src="img/images/rocket.png" alt="Картинка ракета"></div>
           </div>        
-        <div class="col-md-6">
-          <h2 class="heading heading--number heading--number-2 mt-20">Тариф для стартапов</h2>
+        <div class="col-md-6 col-xl-6 offset-xl-1">          
+          <h2 class="heading heading--number heading--number-2 mt-startup-heading">Тариф для стартапов</h2>
           <div class="service-description__content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="service-description__button-arrow"></div>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>            
+            <div class="service-description__button-arrow"></div>
+          </div>          
         </div>
       </div>
     </div>
@@ -257,7 +230,7 @@
 
     <!-- Тарифы и пакеты -->    
     <section id="prices" class="prices">
-      <div class="container">
+      <div class="container container--tablet--no-padding container--desctop--no-padding">
         <div class="row justify-content-center">
           <div class="col-md-5 text-center">
             <h2 class="heading">Тарифы и пакеты</h2>
@@ -275,7 +248,7 @@
                 <ul>
                   <li>10 GB Disk Space</li>
                   <li>5 Sub Domains</li>
-                  <li>12 Database</li>
+                  <li>4 Database</li>
                   <li>Unlimited Users</li>
                 </ul>               
               </div>
@@ -293,9 +266,9 @@
               <div class="package__period">оплата в месяц</div>
               <div class="package__benefits">
                 <ul>
-                  <li>10 GB Disk Space</li>
-                  <li>5 Sub Domains</li>
-                  <li>12 Database</li>
+                  <li>100 GB Disk Space</li>
+                  <li>100 Sub Domains</li>
+                  <li>100 Database</li>
                   <li>Unlimited Users</li>
                 </ul>               
               </div>
@@ -313,9 +286,9 @@
               <div class="package__period">оплата в месяц</div>
               <div class="package__benefits">
                 <ul>
-                  <li>10 GB Disk Space</li>
-                  <li>5 Sub Domains</li>
-                  <li>12 Database</li>
+                  <li>1000 GB Disk Space</li>
+                  <li>∞ Sub Domains</li>
+                  <li>∞ Database</li>
                   <li>Unlimited Users</li>
                 </ul>               
               </div>
@@ -331,7 +304,7 @@
 
     <!-- Подвал -->
     <footer id="footer" class="footer">
-      <div class="container">
+      <div class="container container--tablet--no-padding container--desctop--no-padding">
         <div class="row">
           <div class="col-md-4 col-xl-3">
             <div class="footer__title">продукт</div>
@@ -379,6 +352,7 @@
     <!-- Vendors scripts -->
     <script src="libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
     <!-- User script -->
     <script src="js/main.js"></script>
   </body>
